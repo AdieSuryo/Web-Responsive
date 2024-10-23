@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+    <header class="head">
+        <div class="profile">
+            <div>
+                <img src="adie.jpg" alt="">
+            </div>
+            <div>
+                <h1>PROFILE MAHASISWA</h1>
+            </div>
+        </div>
+        
+        
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href=""><li>Biodata</li></a>
+            <a href="#pen" onclick="tampilPendidikan()"><li>Pendidikan</li></a>
+            <a href="#peng" onclick="tampilPengalaman()"><li>Pengalaman</li></a>
+            <a href="#keah" onclick="tampilKeahlian()"><li>Keahlian</li></a>
+            <a href="#pub" onclick="tampilPublikasi()"><li>Publikasi</li></a>     
+        </nav>
+
+        <section>
+            <div id="isi">
+                <h2>Biodata</h2>
+                <p><strong>NIM:</strong> 2023081036</p>
+                <p><strong>Nama:</strong> Adie Suryo Syaputro</p>
+                <p><strong>Jurusan:</strong> Sistem Informasi</p>
+                <p><strong>Agama:</strong> Islam</p>
+                <p><strong>Tanggal Lahir:</strong> 30 Mei 2005</p>
+                <p><strong>Tempat Lahir:</strong> Tangerang</p>
+                <p><strong>Golongan Darah:</strong> A</p>
+                <p><strong>Jenis Kelamin:</strong>Laki-Laki</p>
+                <p><strong>Alamat:</strong> JL Cimanggis Barat Gg Nanngka No 21</p>
+            </div>
+            
+        </section>
+
+        <aside>
+            <h3>Hobi</h3><br>
+            <ul>
+                <li>Bermain Gita</li>
+                <li>Bola</li>
+                <li>Desain UI</li>
+                <li>Membaca</li>
+                <li>Mendengar musik</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <ul>
+                <li><p>Twitter: @adiesuryo1</p></li>
+                <li><p>FB: @adiesuryo</p></li>
+                <li><p>Instagram: @adiesryo</p></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2024. All Rights Reserved</p>
+        </div>
+        <div class="web-info">
+            <div class="mahasiswa">
+                <p>Profile Mahasiswa</p>
+            </div>
+            
+            <p>Info Saya/Bakat Terpendam saya</p>
+        </div>
+    </footer>
+
+    <script>
+        function tampilPendidikan() {
+            const isiDiv = document.getElementById("isi");
+            isiDiv.innerHTML = `
+                <h1>Pendidikan</h1><br>
+
+                <h2 style="padding-top: 20px;">SD</h2>
+                <p><strong>Nama Sekolah:</strong> MIN 1 KOTA TANGERANG SELATAN</p>
+                <p><strong>Tahun Pendidikan:</strong> 2012 - 2017</p><br>
+
+                <h2 style="padding-top: 20px;">SMP</h2>
+                <p><strong>Nama Sekolah:</strong> SMPN 2 KOTA TANGERANG SELATAN</p>
+                <p><strong>Tahun Pendidikan:</strong> 2017 - 2019</p><br>
+
+                <h2 style="padding-top: 20px;">SMA</h2>
+                <p><strong>Nama Sekolah:</strong> SMA 25 MUHAMMADIYAH PAMULANG</p>
+                <p><strong>Tahun Pendidikan:</strong> 2019 - 2023</p><br>
+
+                <h2 style="padding-top: 20px;">S1</h2>
+                <p><strong>Nama Sekolah:</strong> UNIVERSITAS PEMBANGUNAN JAYA</p>
+                <p><strong>Tahun Pendidikan:</strong> 2023 - SEKARANG</p><br>
+            `;
+        }
+        
+        function tampilPengalaman() {
+            const isiDiv = document.getElementById("isi");
+            isiDiv.innerHTML = `
+                <h2>Pengalaman</h2><br>
+                
+                <h3>Gidhub</h3>
+                <p><strong>Divisi:</strong> Perlengkapan</p>
+                <p><strong>Tahun Organisasi:</strong> 12 Mei 2023</p><br>
+
+                <h3>BRIN</h3>
+                <p><strong>Divisi:</strong> Magang</p>
+                <p><strong>Tahun Organisasi:</strong> 27 Agustus 2024</p><br>
+
+                
+            `;
+        }
+
+        function tampilKeahlian() {
+            const isiDiv = document.getElementById("isi");
+            isiDiv.innerHTML = `
+                <h2>Keahlian</h2><br>
+                
+                <h3 style="padding-bottom: 10px;">Soft Skill</h3>
+                <ul>
+                    <li>Manajemen waktu</li>
+                    <li>Kerja sama tim</li>
+                    <li>Kerja di bawah tekanan</li>
+                </ul><br>
+
+                <h3 style="padding-bottom: 10px;">Hard Skill</h3>
+                <ul>
+                    <li>Microsoft Word</li>
+                    <li>Power Point</li>
+                    <li>Figma</li>
+                </ul>
+            `;
+        }
+
+        function tampilPublikasi() {
+            const isiDiv = document.getElementById("isi");
+            isiDiv.innerHTML = `
+                <h2>Publikasi</h2><br>
+                
+                <p>Artikel bahasa Indonesia pernah masuk di publis melalui web kompas.com</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
